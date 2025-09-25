@@ -28,16 +28,39 @@ int main(void){
     scanf("%d : %d", &inputHr, &inputMin);
     inputTotal = inputHr * 60 + inputMin;
     
-    int diff1, diff2, diff3, diff4, diff5, diff6, diff7, diff8;
-    diff1 = (inputTotal > dep1) ? inputTotal - dep1 : dep1 - inputTotal;
-    diff2 = (inputTotal > dep2) ? inputTotal - dep2 : dep2 - inputTotal;
-    diff3 = (inputTotal > dep3) ? inputTotal - dep3 : dep3 - inputTotal;
-    diff4 = (inputTotal > dep4) ? inputTotal - dep4 : dep4 - inputTotal;
-    diff5 = (inputTotal > dep5) ? inputTotal - dep5 : dep5 - inputTotal;
-    diff6 = (inputTotal > dep6) ? inputTotal - dep6 : dep6 - inputTotal;
-    diff7 = (inputTotal > dep7) ? inputTotal - dep7 : dep7 - inputTotal;
-    diff8 = (inputTotal > dep8) ? inputTotal - dep8 : dep8 - inputTotal;
-    
+    int diff1, diff2, diff3, diff4, diff5, diff6, diff7, diff8, wrap, between;
+    between = (inputTotal > dep1) ? inputTotal - dep1 : dep1 - inputTotal;
+    wrap = (inputTotal > dep1) ? (24 * 60 - inputTotal) + dep1 : (24 * 60 - dep1) + inputTotal;
+    diff1 = (between > wrap) ? wrap : between;
+
+    between = (inputTotal > dep2) ? inputTotal - dep2 : dep2 - inputTotal;
+    wrap = (inputTotal > dep2) ? (24 * 60 - inputTotal) + dep2 : (24 * 60 - dep2) + inputTotal;
+    diff2 = (between > wrap) ? wrap : between;
+
+    between = (inputTotal > dep3) ? inputTotal - dep3 : dep3 - inputTotal;
+    wrap = (inputTotal > dep3) ? (24 * 60 - inputTotal) + dep3 : (24 * 60 - dep3) + inputTotal;
+    diff3 = (between > wrap) ? wrap : between;
+
+    between = (inputTotal > dep4) ? inputTotal - dep4 : dep4 - inputTotal;
+    wrap = (inputTotal > dep4) ? (24 * 60 - inputTotal) + dep4 : (24 * 60 - dep4) + inputTotal;
+    diff4 = (between > wrap) ? wrap : between;
+
+    between = (inputTotal > dep5) ? inputTotal - dep5 : dep5 - inputTotal;
+    wrap = (inputTotal > dep5) ? (24 * 60 - inputTotal) + dep5 : (24 * 60 - dep5) + inputTotal;
+    diff5 = (between > wrap) ? wrap : between;
+
+    between = (inputTotal > dep6) ? inputTotal - dep6 : dep6 - inputTotal;
+    wrap = (inputTotal > dep6) ? (24 * 60 - inputTotal) + dep6 : (24 * 60 - dep6) + inputTotal;
+    diff6 = (between > wrap) ? wrap : between;
+
+    between = (inputTotal > dep7) ? inputTotal - dep7 : dep7 - inputTotal;
+    wrap = (inputTotal > dep7) ? (24 * 60 - inputTotal) + dep7 : (24 * 60 - dep7) + inputTotal;
+    diff7 = (between > wrap) ? wrap : between;
+
+    between = (inputTotal > dep8) ? inputTotal - dep8 : dep8 - inputTotal;
+    wrap = (inputTotal > dep8) ? (24 * 60 - inputTotal) + dep8 : (24 * 60 - dep8) + inputTotal;
+    diff8 = (between > wrap) ? wrap : between;
+
     int closest = diff1;
     int closestDep = dep1;
     int closestArr = arr1;
