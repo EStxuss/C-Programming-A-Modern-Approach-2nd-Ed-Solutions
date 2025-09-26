@@ -2,15 +2,14 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     int n;
     printf("Enter an integer: ");
     scanf("%d", &n);
 
+    for (int i = 1, sq = 1; sq <= n; ++i, sq = i * i)
+        if (sq % 2 == 0)
+            printf("%d\n", sq);
 
-    for(int i = 1, sq = 1; sq <= n; ++i, sq = i * i)
-	if(sq % 2 == 0)
-	    printf("%d\n", sq);
-    
     return 0;
 }

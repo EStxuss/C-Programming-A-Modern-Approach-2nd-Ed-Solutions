@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("Enter a 3 digit number: ");
 
     int inputNum = 0;

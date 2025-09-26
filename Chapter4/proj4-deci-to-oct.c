@@ -2,9 +2,9 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("Enter a number between 0 and 32767: ");
-    
+
     int deciInput = 0;
     scanf("%d", &deciInput);
 
@@ -20,7 +20,8 @@ int main(void){
     deciInput /= 8;
     first = deciInput % 8;
 
-    printf("Your number in octal is: %d%d%d%d%d\n", first, second, third, fourth, fifth);
+    printf("Your number in octal is: %d%d%d%d%d\n", first, second, third,
+           fourth, fifth);
 
     return 0;
 }

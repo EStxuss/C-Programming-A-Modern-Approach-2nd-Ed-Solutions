@@ -1,10 +1,11 @@
-// takes phone number input in the form (xxx) xxx-xxxx and outputs as xxx.xxx.xxxx
+// takes phone number input in the form (xxx) xxx-xxxx and outputs as
+// xxx.xxx.xxxx
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("Enter phone number [(xxx) xxx-xxxx]: ");
-    int areaCode=0, exchange = 0, lineNum = 0;
+    int areaCode = 0, exchange = 0, lineNum = 0;
 
     scanf("(%d) %d-%d", &areaCode, &exchange, &lineNum);
 

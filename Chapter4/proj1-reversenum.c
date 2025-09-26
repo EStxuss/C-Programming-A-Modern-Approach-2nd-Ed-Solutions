@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("Enter a double digit number: ");
 
     int inputNum = 0;

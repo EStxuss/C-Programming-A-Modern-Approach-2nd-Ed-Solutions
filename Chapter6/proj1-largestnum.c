@@ -3,16 +3,16 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     float input = 1.0f;
     float largest = 0.0f;
-    while(input > 0.0f){
-	printf("Enter a number: ");
-	scanf("%f", &input);
-	if(input > largest)
-	    largest = input;
+    while (input > 0.0f) {
+        printf("Enter a number: ");
+        scanf("%f", &input);
+        if (input > largest)
+            largest = input;
     }
-    
+
     printf("The largest number entered was %.2f\n", largest);
 
     return 0;

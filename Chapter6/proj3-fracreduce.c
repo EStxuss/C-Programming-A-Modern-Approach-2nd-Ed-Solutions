@@ -2,22 +2,22 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     int num, den;
     printf("Enter a fraction: ");
     scanf("%d / %d", &num, &den);
 
-    //compute gcd
+    // compute gcd
     int n = num, m = den, rem;
-    while(n != 0){
-	rem = m % n;
-	m = n;
-	n = rem;
+    while (n != 0) {
+        rem = m % n;
+        m = n;
+        n = rem;
     }
 
-    if(m != den){
-	num /= m;
-	den /= m;
+    if (m != den) {
+        num /= m;
+        den /= m;
     }
 
     printf("In lowest terms: %d/%d\n", num, den);

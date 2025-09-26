@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("Enter a 3 digit number: ");
 
     int hundreds = 0, tens = 0, ones = 0;

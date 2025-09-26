@@ -1,8 +1,8 @@
-//takes input of the form dd/mm/yyyy and outputs yyyyddmm
+// takes input of the form dd/mm/yyyy and outputs yyyyddmm
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("Enter a date dd/mm/yyyy: ");
 
     int day = 0, month = 0, year = 0;

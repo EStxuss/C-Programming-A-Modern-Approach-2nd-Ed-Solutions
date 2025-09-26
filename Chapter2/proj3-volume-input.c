@@ -5,7 +5,7 @@
 #define PI 3.14159f
 #define FRACTION (4.0f / 3.0f)
 
-int main(void){
+int main(void) {
     float r = 0;
     printf("Enter a radius of a sphere: ");
     scanf("%f", &r);

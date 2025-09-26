@@ -1,8 +1,9 @@
-//user enters two fractions separated by plus side and gives the sum as a fraction
+// user enters two fractions separated by plus side and gives the sum as a
+// fraction
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("Enter two fractions separated by a plus sign: ");
     int denom1 = 0, numer1 = 0, denom2 = 0, numer2 = 0;
 

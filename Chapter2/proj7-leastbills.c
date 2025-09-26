@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     printf("Enter a dollar amount $*.00: ");
 
     int amt = 0;
@@ -10,25 +10,25 @@ int main(void){
 
     int rem = amt;
     int twenties = 0;
-    while(rem >= 20){
+    while (rem >= 20) {
         ++twenties;
         rem -= 20;
     }
 
     int tens = 0;
-    while(rem >= 10){
+    while (rem >= 10) {
         ++tens;
         rem -= 10;
     }
-    
+
     int fives = 0;
-    while(rem >= 5){
+    while (rem >= 5) {
         ++fives;
         rem -= 5;
     }
 
     int ones = 0;
-    while(rem >= 1){
+    while (rem >= 1) {
         ++ones;
         rem -= 1;
     }

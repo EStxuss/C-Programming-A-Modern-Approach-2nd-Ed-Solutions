@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 
-int main(void){
+int main(void) {
     float loanStart = 0.0f;
     printf("Enter amount of loan: ");
     scanf("%f", &loanStart);
@@ -12,7 +12,6 @@ int main(void){
     scanf("%f", &yrInterestRt);
     float moInterestRt = yrInterestRt / 12 / 100;
 
-    
     float moPayment = 0.0f;
     printf("Enter your monthly payment: ");
     scanf("%f", &moPayment);
