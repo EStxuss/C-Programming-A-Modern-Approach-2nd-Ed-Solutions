@@ -22,6 +22,9 @@ int main(void) {
         else
             commision = 255.00f + tradeVal * 0.0009f;
 
+        if (commision < 39.00f)
+            commision = 39.00f;
+
         printf("Commision: $%.2f\n", commision);
         printf("Enter value of trade: ");
         scanf("%f", &tradeVal);
