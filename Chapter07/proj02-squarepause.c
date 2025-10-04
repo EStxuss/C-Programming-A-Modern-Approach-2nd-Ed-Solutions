@@ -11,7 +11,7 @@ int main(void) {
     for (int i = 1, sq = i; i <= entries; ++i, sq = i * i) {
         printf("%d%15d\n", i, sq);
 
-        if (i % 25 == 0) {
+        if (i % 24 == 0) {
             printf("Press ENTER to continue...\n");
             while (getchar() != '\n')
                 ;
