@@ -1,0 +1,34 @@
+
+added 0 to end of queue q1
+
+added 1 to end of queue q1
+
+added 2 to end of queue q1
+
+added 3 to end of queue q1
+
+added 4 to end of queue q1
+
+added 0 to end of queue q2
+
+added 1 to end of queue q2
+
+added 2 to end of queue q2
+
+Removed 0 from front of queue q1
+
+Removed 1 from front of queue q1
+
+Removed 2 from front of queue q1
+
+Removed 0 from front of queue q2
+
+Removed 1 from front of queue q2
+
+The front item of queue q1 is 3
+
+The last item of queue q1 is 4
+
+The front item of queue q2 is 2
+
+The last item of queue q2 is 2
