@@ -1,0 +1,14 @@
+char a info:
+size: 8 bits
+offset: 0 bits
+
+int b[2] info:
+size: 64 bits
+offset: 32 bits
+
+float c info:
+size: 32 bits
+offset: 96 bits
+
+total struct size: 128 bits
+
