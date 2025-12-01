@@ -40,13 +40,15 @@ int main(void) {
 }
 
 void findClosestFlight(int desiredTime, int *departureTime, int *arrivalTime) {
-    int closestFlightIdx = -1, diff, lowestDiff;
+    int closestFlightIdx = -1, wrap, direct, diff, lowestDiff;
 
     for (int i = 0; i < FLIGHTS; ++i) {
-        diff = 1440 - dep[i] + desiredTime;  // wrap
-        int tmp = abs(dep[i] - desiredTime); // direct
-        if (tmp < diff)
-            diff = tmp;
+        wrap = (dep[i] > desiredTime) ? 1440 - dep[i] + desiredTime
+                                      : 1440 - desiredTime + dep[i];
+
+        direct = abs(dep[i] - desiredTime);
+
+        diff = (wrap < direct) ? wrap : direct;
 
         if (closestFlightIdx == -1 || diff < lowestDiff) {
             closestFlightIdx = i;
