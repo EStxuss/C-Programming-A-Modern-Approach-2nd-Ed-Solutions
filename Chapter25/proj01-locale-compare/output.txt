@@ -1,0 +1,88 @@
+thousands_sep is different:
+C locale: 
+Native locale: ,
+
+grouping is different:
+C locale: 
+Native locale: 3 3 
+
+mon_decimal_point is different:
+C locale: 
+Native locale: .
+
+mon_thousands_sep is different:
+C locale: 
+Native locale: ,
+
+mon_grouping is different:
+C locale: 
+Native locale: 3 3 
+
+negative_sign is different:
+C locale: 
+Native locale: -
+
+currency_symbol is different:
+C locale: 
+Native locale: $
+
+int_curr_symbol is different:
+C locale: 
+Native locale: USD 
+
+frac_digits is different:
+C locale: 127
+Native locale: 2
+
+p_cs_precedes is different:
+C locale: 127
+Native locale: 1
+
+n_cs_precedes is different:
+C locale: 127
+Native locale: 1
+
+p_sep_by_space is different:
+C locale: 127
+Native locale: 0
+
+n_sep_by_space is different:
+C locale: 127
+Native locale: 0
+
+p_sign_posn is different:
+C locale: 127
+Native locale: 1
+
+n_sign_posn is different:
+C locale: 127
+Native locale: 1
+
+int_frac_digits is different:
+C locale: 127
+Native locale: 2
+
+int_p_cs_precedes is different:
+C locale: 127
+Native locale: 1
+
+int_n_cs_precedes is different:
+C locale: 127
+Native locale: 1
+
+int_p_sep_by_space is different:
+C locale: 127
+Native locale: 1
+
+int_n_sep_by_space is different:
+C locale: 127
+Native locale: 1
+
+int_p_sign_posn is different:
+C locale: 127
+Native locale: 1
+
+int_n_sign_posn is different:
+C locale: 127
+Native locale: 1
+
