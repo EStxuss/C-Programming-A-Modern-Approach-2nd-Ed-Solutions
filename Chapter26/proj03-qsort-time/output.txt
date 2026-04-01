@@ -1,0 +1,4 @@
+Sort times:
+1000 elements: 0.000020 seconds
+10,000 elements: 0.000202 seconds
+100,000 elements: 0.002464 seconds
